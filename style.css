@@ -1,0 +1,176 @@
+body {
+  box-sizing: border-box;
+  background: #d1ebf5;
+}
+
+.main {
+  text-align: center;
+}
+
+@font-face {
+  src: url("../flaticon/fonts/OpenSans-ExtraBoldItalic.ttf");
+  font-family: "open";
+}
+
+@font-face {
+  src: url("../fonts/Anton-Regular.ttf");
+  font-family: "anton";
+}
+
+main > h1 {
+  font-family: "open";
+  text-transform: uppercase;
+  color: #07dbf7;
+  text-shadow: 3px 3px #0394ad;
+}
+
+main > h2 {
+  font-family: "anton";
+  color: #ebe7e7;
+  text-shadow: 3px 3px #03a7bd;
+  font-size: 1.9rem;
+}
+
+.container {
+  width: 306px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 5px 1px #03a7bd;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "anton";
+  background: white;
+  padding: 0.5rem;
+}
+
+.button_container {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lights {
+  margin-left: 1rem;
+  cursor: default;
+}
+
+.lights > div {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 2px solid #03daf7;
+  background: #03daf7;
+  animation: light-1 0.5s 0.5s ease-in 10000;
+}
+
+@keyframes light-1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 0.3rem 0.8rem;
+  background: #35dcf1;
+  font-family: "anton";
+  font-size: 0.7rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.mobile_mode {
+  display: none;
+}
+
+button:hover,
+button:active {
+  background: #85e3f0;
+}
+
+.containing_block {
+  border: 1px solid #c1eaf1;
+  /* border: 1px solid #35dcf1; */
+  /* color: #07dbf7; */
+  border-radius: 10px;
+  padding: 1rem;
+}
+.display_number {
+  border: 1px solid #039baf;
+  height: 3rem;
+  padding: 1rem;
+  text-align: left;
+  font-size: 3rem;
+  line-height: 1;
+  border-radius: 10px;
+}
+
+.role {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.part,
+.parts {
+  padding: 1rem;
+  border: 1px solid #039baf;
+  border-radius: 4px;
+  line-height: 1;
+  cursor: pointer;
+  width: 20px;
+  color: #037d92;
+}
+
+.part:hover,
+.part:active,
+.parts:hover,
+.parts:active {
+  box-shadow: 1px 1px 4px 1px #87e2f1;
+  background: #f3f8f8;
+}
+
+.caculate {
+  padding: 1rem;
+  border: 1px solid #039baf;
+  border-radius: 4px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.caculate:hover,
+.caculate:active {
+  box-shadow: 1px 1px 4px 1px #87e2f1;
+  background: #f3f8f8;
+}
+
+@media (max-width: 357px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.one {
+  transition: background 0.5s linear 5;
+}
+
+.cover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
